@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import PageNotFoundImage from "../assets/images/pageNotFound.png";
 import { Button } from "../components";
+import { useTitle } from "../hooks";
 
-export const PageNotFound = () => {
+export const PageNotFound = ({ title }) => {
+  useTitle(title);
   return (
     <main>
       <section className="flex flex-col justify-center px-2">
@@ -20,7 +22,7 @@ export const PageNotFound = () => {
         </div>
         <div className="flex justify-center my-4">
           <Link to="/">
-            <Button children="Back To Cinimate"/>
+            <Button children="Back To Cinimate" />
           </Link>
         </div>
       </section>
