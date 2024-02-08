@@ -1,11 +1,14 @@
-import "./App.css";
-import { Header } from "./components/Header";
+import { Header } from "./components";
+import { Footer } from "./components";
+import { ScrollToTop } from "./components";
 import { AllRoutes } from "./routes/AllRoutes";
-import { Footer } from './components/Footer';
+import './index.css';
+import "./App.css";
 function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
       <AllRoutes />
       <Footer />
     </div>
